@@ -5,7 +5,6 @@ using ReLogic.Content;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using Terraria.ID;
-using ExampleMod.Backgrounds;
 
 namespace ExampleMod.Content
 {
@@ -19,9 +18,9 @@ namespace ExampleMod.Content
 
 		public override Asset<Texture2D> MoonTexture => ModContent.Request<Texture2D>($"{menuAssetPath}/ExampliumMoon");
 
-		public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/MysteriousMystery");
+		/*public override int Music => Mod.GetSoundSlot(SoundType.Music, ""); TODO: Reimplement music loading */
 
-		public override ModSurfaceBackgroundStyle MenuBackgroundStyle => ModContent.GetInstance<ExampleSurfaceBackgroundStyle>();
+		/*public override ModSurfaceBackgroundStyle MenuBackgroundStyle => Mod.GetSurfaceBackgroundStyle(""); TODO: Reimplement backgrounds */
 
 		public override string DisplayName => "Example ModMenu";
 
